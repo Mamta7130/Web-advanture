@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #a29a9a;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: rgb(250, 214, 214);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background-color: #661313;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+</style>
+<body>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Your message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+</body>
+</html>
